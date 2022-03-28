@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Portfolio.master.cs" Inherits="Portfolio.Portfolio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style> 
+            .container .box { 
+                width:100%; 
+                margin:0px; 
+                display:table;
+                background: blue;
+            } 
+            .container .box .box-row { 
+                display:table-row; 
+            } 
+            .container .box .box-cell { 
+                display:table-cell; 
+                /*width:33%;*/
+                padding:10px;
+                
+            } 
+            .container .box .box-cell.box1 { 
+                background:green; 
+                color:white; 
+                text-align:justify; 
+                float: left;
+            } 
+            .container .box .box-cell.box2 { 
+                background:lightgreen; 
+                text-align:justify;
+                width: 80%;
+            } 
+            .container .box .box-cell.box3 { 
+                background:lime; 
+                text-align:justify;
+                float: right;
+            }
+        </style> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Header" style="margin: auto; width:100%; border: 3px solid green;">
+            <table style="align-content: center">
+                <tr style="align-content: center">
+                    <td>File</td>
+                    <td>Edit</td>
+                    <td>View</td>
+                    <td>Git</td>
+                </tr>
+                <tr style="align-content: center">
+                    <td>Back</td>
+                    <td>Forward</td>
+                    <td>Save</td>
+                    <td>Run</td>
+                </tr>
+            </table>
+        </div>
+        <center>
+        <h1 style = "color:green;">CURRICULIM VITAE</h1> 
+        <div class="container"> 
+            <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1"> 
+                        <h1 style="text-align: right">SLIKA</h1>
+                        KONTAKT
+                        TEHNOLOGII
+                    </div> 
+                      
+                    <div class="box-cell box2"> 
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                    </div> 
+                      
+                    <div class="box-cell box3"> 
+                        PROEKTI. Na klik da se otvara vo container :)
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        </center>
+        
+        <div id="Footer" style="margin: auto; width: 100%; border: 3px solid green; text-align:center;">
+            Dino Nikolovski <%= DateTime.Now.ToString("yyyy") %>. Created 2022
+        </div>
+    </form>
+</body>
+</html>
