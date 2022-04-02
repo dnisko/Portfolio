@@ -76,7 +76,20 @@
                     </div> 
                       
                     <div class="box-cell box3"> 
-                        PROEKTI. Na klik da se otvara vo container :)
+                        <p>Work experience</p>
+                        <asp:LinkButton ID="Tav" runat="server" OnClick="LinkButton_Click">2016 – ongoing 
+                            - Employed at “TAV Macedonia DOOEL” Petrovec, as Cargo Document Officer - Telex
+
+                        </asp:LinkButton>
+                        <br />
+                        <br />
+                        clicked:<asp:Label ID="Label1" runat="server" Text="Label"> </asp:Label>
+
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="Work" runat="server" OnClick="LinkButton_Click">Work experience
+
+                        </asp:LinkButton>
                     </div> 
                 </div> 
             </div> 

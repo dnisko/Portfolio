@@ -13,5 +13,19 @@ namespace Portfolio
         {
 
         }
+
+        protected void LinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Experience.aspx");
+            LinkButton lbtn = (LinkButton)sender;
+            string id = lbtn.ID;
+            Label1.Text = " " + id;
+            System.Web.UI.HtmlControls.HtmlGenericControl div1 = 
+                (System.Web.UI.HtmlControls.HtmlGenericControl)ContentPlaceHolder1.FindControl(id);
+
+            div1.Visible = true;
+
+
+        }
     }
 }
