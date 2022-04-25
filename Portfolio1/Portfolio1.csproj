@@ -68,11 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.aspx" />
+    <Content Include="Old\Index.aspx" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Old\index2.html" />
+    <Content Include="Pictures\dino.jpg" />
+    <Content Include="Scripts\FadeScript.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\Styles\Left.css" />
+    <Content Include="Scripts\Styles\Style.css" />
+    <Content Include="Old\Style1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +88,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Old\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Old\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

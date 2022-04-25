@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Portfolio1.Index1" %>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head runat="server">
@@ -12,7 +10,8 @@
     <script src="Scripts/FadeScript.js"></script>
 
     <form id="form1" runat="server">
-            
+        <center>
+            <div class="main">
                 <div class="header">
                     <table>
                         <tr>
@@ -32,45 +31,9 @@
                 <h1 class="h1"><span class="span">CURRICULUM VITAE</span> </h1>
                 <div class="container">
                     <div class="left">
-
-                        <div class="else1">
-                            <h1 style="text-align: right">
-                                <img src="Pictures/dino.jpg" class="img" /></h1>
-                        </div>
-                        
-                        <div>
-                            <p class="pre">
-                                <b style="font-size: large">Adress:</b>
-                                <br />
-                                "Pitu Guli" #30
-                                <br />
-                                Skopje, Macedonia
-                                <br />
-                                <br />
-                                <b style="font-size: large">Contact:</b>
-                                <br />
-                                (+389) 70 356 482
-                                <br />
-                                <a href="mailto:dnisko@protonmail.com">dnisko@protonmail.com</a>
-                                <br />
-                                <br />
-                                Date of birth
-                                12th of September 1989
-                            </p>
-                        </div>
-
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
-                        <div class="else">TEHNOLOGII</div>
+                        <h1 style="text-align: right"><img src="Pictures/dino.jpg" /></h1>
+                        KONTAKT
+                        TEHNOLOGII
                     </div>
                     <div class="middle">
                         <div runat="server" id="div1" class="targetDiv">
@@ -110,9 +73,9 @@
                 <div class="footer">
                     Dino Nikolovski <%= DateTime.Now.ToString("yyyy") %>. Created 2022
                 </div>
-            
+            </div>
+        </center>
 
     </form>
 </body>
 </html>
-
