@@ -1,0 +1,12 @@
+﻿.right {
+    flex: 0 0 15%;
+    /*text-align: justify;*/
+    float: right;
+    font-size: larger;
+    overflow: hidden;
+}
+
+    .right .RightContainer {
+        margin-left: 10px;
+        margin-top: 40px;
+    }

@@ -7,6 +7,7 @@
     background: #007acc;
     overflow: auto;
     height: auto;
+    flex: 0 0 15%;
     max-height: calc(100vh - 190px);
     scrollbar-color: #686868 #3E3E42;
     scrollbar-width: thin;
@@ -25,6 +26,10 @@
         margin-left: 3px;
         margin-right: 3px;
     }
+        .else .LeftP {
+            border-block-start: solid;
+            border-color: #007acc;
+        }
     .left .else1 {
         background: #2d2d30;
         margin: 3px;

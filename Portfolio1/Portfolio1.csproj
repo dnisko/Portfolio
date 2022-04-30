@@ -77,7 +77,10 @@
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\Styles\HeaderFooter.css" />
     <Content Include="Scripts\Styles\Left.css" />
+    <Content Include="Scripts\Styles\Middle.css" />
+    <Content Include="Scripts\Styles\Right.css" />
     <Content Include="Scripts\Styles\Style.css" />
     <Content Include="Old\Style1.css" />
     <Content Include="Web.config" />

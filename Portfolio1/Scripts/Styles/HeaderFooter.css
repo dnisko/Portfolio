@@ -1,0 +1,9 @@
+﻿.header {
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,16 +1,22 @@
 ﻿@import url('Left.css');
+@import url('Middle.css');
+@import url('Right.css');
+@import url('HeaderFooter.css');
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .body {
     background: #2d2d30;
     font-family: Consolas;
     color: #f1f1f1;
-}
-
-.main {
-    
-}
-
-.header {
-    text-align: left;
 }
 
 .h1 {
@@ -32,40 +38,6 @@
     overflow: hidden;
 }
 
-    /*.container > div {
-        flex: 1 2 1; grow
-        display: table;
-        background: #1e1e1e;
-        height: inherit;
-        padding: 10px;
-    }*/
-
-
-.middle {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    border-left: 6px solid grey;
-    border-right: 6px solid grey;
-    text-align: justify;
-    width: 80%;
-    font-size: x-large;
-    overflow: hidden;
-}
-
-.right {
-    text-align: justify;
-    float: right;
-    font-size: larger;
-    overflow: hidden;
-}
-
-.footer {
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-}
-
 .container a {
     color: #f1f1f1;
     text-decoration: none;
@@ -77,14 +49,4 @@
 
 .container .h1 .span {
     background: #007acc;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
