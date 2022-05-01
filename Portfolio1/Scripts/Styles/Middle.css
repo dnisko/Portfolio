@@ -6,7 +6,6 @@
     border-right: 6px solid grey;
     /*text-align: justify;*/
     width: 80%;
-    font-size: x-large;
     overflow: hidden;
 }
 
@@ -15,7 +14,14 @@
         margin-top: 40px;
     }
 
-    .middle .p {
-        border-bottom: 2px solid grey;
-
+    .middle .p1 {
+        border-bottom: 3px solid grey;
+        font-size: 30px;
+    }
+    .middle .p2 {
+        border-bottom: 1px solid #007acc;
+        font-size: 25px;
+    }
+    .middle .p3 {
+        font-size: 20px;
     }

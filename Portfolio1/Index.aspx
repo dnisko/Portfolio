@@ -117,85 +117,108 @@
             <div class="middle">
                 <div class="MiddleContainer">
                     <div runat="server" id="div1" class="targetDiv">
-                        <p class="p">EDUCATION</p>
-                        <p>
-                            2010 - 2014
-                            <br />
+
+                        <p class="p1">EDUCATION</p>
+
+                        <p class="p2">2010 - 2014</p>
+
+                        <p class="p3">
                             <b>University "American College" - Skopje,
                                 <br />
                                 School of Computer Science and IT
                                 <br />
                                 Study program: Software Engineering
                             </b>
-                            <br />
-                            <br />
-                            2004 - 2008
-                            <br />
-                            <b>High School – SUGS “Georgi Dimitrov”, Skopje
-                            </b>
+                        </p>
+                        <br />
+                        <br />
+
+                        <p class="p2">2004 - 2008</p>
+                        
+                        <p class="p3">
+                            <b>High School – SUGS “Georgi Dimitrov”, Skopje</b>
                         </p>
                         <br />
                         <br />
 
                     </div>
                     <div runat="server" id="div2" class="targetDiv">
-                        <p class="p">EXPERIENCE</p>
-                        <p>
+                        <p class="p1">EXPERIENCE</p>
+
+                        <p class="p2">
                             <b>Work Experience</b>
-                            <br />
+                        </p>
+
+                        <p class="p3">
                             <b>&#x2022 May 2016 - ongoing</b>
-                                <br />
-                            
-                                &emsp;- Employed at "TAV Macedonia DOOEL" Petrovec, as Cargo document officer - Telex
                             <br />
-                            <br />
+                            &emsp;- Employed at "TAV Macedonia DOOEL" Petrovec, as Cargo document officer - Telex
+                        </p>
+
+                        <br />
+                        <p class="p2">
                             <b>Work projects</b>
-                            <br />
-                            &emsp;- <b>Local Pharmacy</b> – An ASP.NET Web Forms application coded in C#, with a use of Access database, javaScript,
+                        </p>
+
+                        <p class="p3">
+                            &emsp;- <b><i>Local Pharmacy</i></b> – An ASP.NET Web Forms application coded in C#, with a use of Access database, javaScript,
                                                          jQuery and a web service written in C#. (Canceled project)
                             <br />
-                            &emsp;- <b>Invoicing</b> – A Windows forms application coded in C#, with a use of Access database and Crystal
+                            &emsp;- <b><i>Invoicing</i></b> – A Windows forms application coded in C#, with a use of Access database and Crystal
                                                     Reports. Software for invoicing and managing invoices for a small company for buildings
                                                     management
-                            <br />
-                            <br />
+                            <p />
+
+                        <br />
+                        <p class="p2">
+
                             <b>Personal projects and a bachelor thesis</b>
+                        <p />
+
+                        <p class="p3">
+                            &#x2022 <b><i>Bachelor thesis</i></b>
                             <br />
-                            &#x2022<b>Bachelor thesis</b>
-                            <br />
-                            &emsp;- <b>Online booking</b> – ASP.NET Web Forms application coded in C# with a use of javaScript and jQuery.
+                            &emsp;- <b><i>Online booking</i></b>
+                        – ASP.NET Web Forms application coded in C# with a use of javaScript and jQuery.
                                                          Application developed for purchasing tickets online. Database in MS Sql Server and a web service written in
                                                          C#.
-                            <br />
-                            <br />
-                            <b>Personal projects</b>
-                            <br />
-                            &emsp;- <b>Personal website</b> – ASP.NET Web Forms application coded in C# (this page :) )
-                            <br />
-                            &emsp;- <b>Lawyer office</b> – Windows forms application coded in C#, database in Access (ongoing project)
-                            <br />
-                            &emsp;- <b>Home finance</b> – Windows forms application coded in C#, database in Access (ongoing project)
-                            <br />
-                            &emsp;- <b>GetFit</b> – ASP.NET Web Forms application coded in C#, database in Access
-                            <br />
-                            &emsp;- <b>Search</b> – Windows forms application coded in C#, developed for searching a given word, to a given web
-                                                 site, for a given time.
-                            <br />
-                            <br />
-                            <b>School projects</b>
-                            <br />
-                            &emsp;- <b>Online booking</b> – web site coded in ASP, developed for purchasing tickets online. Database in Access.
-                            <br />
-                            &emsp;- <b>DVD</b> – program coded in Delphi 7.0, developed for rent-a-movie shop. Database in Access.
-                            <br />
-                            &emsp;- <b>Notepad</b> – program coded in Java, developed for text editing.
-                        </p>
+                        <p />
+
                         <br />
+                        <p class="p2">
+                            <b>Personal projects</b>
+                        <p />
+
+                        <p class="p3">
+                            &emsp;- <b><i>Personal website</i></b> – ASP.NET Web Forms application coded in C# (this page &#128578)
+                            <br />
+                            &emsp;- <b><i>Lawyer office</i></b> – Windows forms application coded in C#, database in Access (ongoing project)
+                            <br />
+                            &emsp;- <b><i>Home finance</i></b> – Windows forms application coded in C#, database in Access (ongoing project)
+                            <br />
+                            &emsp;- <b><i>GetFit</i></b> – ASP.NET Web Forms application coded in C#, database in Access
+                            <br />
+                            &emsp;- <b><i>Search</i></b> – Windows forms application coded in C#, developed for searching a given word, to a given web
+                                                         site, for a given time.
+                            <p />
+
+                        <br />
+                        <p class="p2">
+                            <b>School projects</b>
+                        <p />
+
+                        <p class="p3">
+                            &emsp;- <b><i>Online booking</i></b> – web site coded in ASP, developed for purchasing tickets online. Database in Access.
+                            <br />
+                            &emsp;- <b><i>DVD</i></b> – program coded in Delphi 7.0, developed for rent-a-movie shop. Database in Access.
+                            <br />
+                            &emsp;- <b><i>Notepad</i></b> – program coded in Java, developed for text editing.
+                        <p />
                         <br />
 
                     </div>
                     <div runat="server" id="div3" class="targetDiv">
-                        <p class="p">SKILLS </p>
+                        <p class="p1">SKILLS </p>
                         ✓ Good organizational, social and communication skills
                             <br />
                         ✓ Easily integrate in a team and adapt to different environments
@@ -204,7 +227,7 @@
                     <br />
                     <br />
                     <div runat="server" id="div4" class="targetDiv">
-                        <p class="p">CERTIFICATION </p>
+                        <p class="p1">CERTIFICATION </p>
                         Graduated with acquired title Software Engineer in June 2014
 
                     </div>
@@ -225,7 +248,7 @@
                         <a class="showSingle" href="#" onclick="return false" target="4">Certification</a>
                         <br />
                         <br />
-                        <a href="#" onclick="return false" id="showall">Show complete portfolio</a>
+                        <a href="#" onclick="return false" id="showall">Show all</a>
                     </div>
                 </div>
             </div>

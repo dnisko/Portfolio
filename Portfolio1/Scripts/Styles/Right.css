@@ -10,3 +10,9 @@
         margin-left: 10px;
         margin-top: 40px;
     }
+.buttons {
+    font-size: 30px;
+}
+    .buttons a {
+        border-bottom: 3px solid grey;
+    }
