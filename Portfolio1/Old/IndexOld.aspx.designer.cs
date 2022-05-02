@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Portfolio1
+namespace Portfolio1.Old
 {
 
 
-    public partial class Index
+    public partial class IndexOld
     {
 
         /// <summary>

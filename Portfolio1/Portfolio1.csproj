@@ -67,8 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\portfolio.accdb" />
     <Content Include="Index.aspx" />
-    <Content Include="Old\Index.aspx" />
+    <Content Include="Old\IndexOld.aspx" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Old\index2.html" />
     <Content Include="Pictures\dino.jpg" />
@@ -83,6 +84,7 @@
     <Content Include="Scripts\Styles\Right.css" />
     <Content Include="Scripts\Styles\Style.css" />
     <Content Include="Old\Style1.css" />
+    <Content Include="Test.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,14 +95,21 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Old\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="Old\IndexOld.aspx.cs">
+      <DependentUpon>IndexOld.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Old\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="Old\IndexOld.aspx.designer.cs">
+      <DependentUpon>IndexOld.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

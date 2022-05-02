@@ -11,7 +11,7 @@ namespace Portfolio1
 {
 
 
-    public partial class Index
+    public partial class Test
     {
 
         /// <summary>
@@ -24,6 +24,15 @@ namespace Portfolio1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
         /// div1 control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace Portfolio1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div1;
+
+        /// <summary>
+        /// RepeaterEducation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterEducation;
 
         /// <summary>
         /// div2 control.
@@ -42,6 +60,15 @@ namespace Portfolio1
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div2;
 
         /// <summary>
+        /// RepeaterExp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterExp;
+
+        /// <summary>
         /// div3 control.
         /// </summary>
         /// <remarks>
@@ -51,6 +78,15 @@ namespace Portfolio1
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div3;
 
         /// <summary>
+        /// RepeaterSkills control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterSkills;
+
+        /// <summary>
         /// div4 control.
         /// </summary>
         /// <remarks>
@@ -58,5 +94,14 @@ namespace Portfolio1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div4;
+
+        /// <summary>
+        /// RepeaterCert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterCert;
     }
 }

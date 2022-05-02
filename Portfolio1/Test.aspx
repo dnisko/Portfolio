@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Portfolio1.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="Portfolio1.Test" %>
 
 <!DOCTYPE html>
 
@@ -30,6 +30,9 @@
             </table>
         </div>
         <h1 class="h1"><span class="span">CURRICULUM VITAE</span> </h1>
+        <p class="h1">
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </p>
         <div class="container">
             <div class="left">
 
@@ -117,118 +120,71 @@
             <div class="middle">
                 <div class="MiddleContainer">
                     <div runat="server" id="div1" class="targetDiv">
-
+                        
                         <p class="p1">EDUCATION</p>
 
-                        <p class="p2">2010 - 2014</p>
-
-                        <p class="p3">
-                            <b>University "American College" - Skopje,
-                                <br />
-                                School of Computer Science and IT
-                                <br />
-                                Study program: Software Engineering
-                            </b>
-                        </p>
-                        <br />
-                        <br />
-
-                        <p class="p2">2004 - 2008</p>
-                        
-                        <p class="p3">
-                            <b>High School – SUGS “Georgi Dimitrov”, Skopje</b>
-                        </p>
-                        <br />
-                        <br />
-
+                        <asp:Repeater ID="RepeaterEducation" runat="server">
+                            <ItemTemplate>
+                                <li>
+                                    <p class="p2"><%# Eval("DateEdu") %></p>
+                                    <p class="p3"><%# Eval("EduName") %></p>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </div>
+
+                    <br />
+                    <br />
+
                     <div runat="server" id="div2" class="targetDiv">
                         <p class="p1">EXPERIENCE</p>
 
-                        <p class="p2">
-                            <b>Work Experience</b>
-                        </p>
+                        <asp:Repeater ID="RepeaterExp" runat="server" OnItemDataBound="RepeaterExp_ItemDataBound">
+                            <ItemTemplate>
+                                <p class="p2"><b><%# Eval("ExpType") %></b></p>
 
-                        <p class="p3">
-                            <b>&#x2022 May 2016 - ongoing</b>
-                            <br />
-                            &emsp;- Employed at "TAV Macedonia DOOEL" Petrovec, as Cargo document officer - Telex
-                        </p>
-
-                        <br />
-                        <p class="p2">
-                            <b>Work projects</b>
-                        </p>
-
-                        <p class="p3">
-                            &emsp;- <b><i>Local Pharmacy</i></b> – An ASP.NET Web Forms application coded in C#, with a use of Access database, javaScript,
-                                                         jQuery and a web service written in C#. (Canceled project)
-                            <br />
-                            &emsp;- <b><i>Invoicing</i></b> – A Windows forms application coded in C#, with a use of Access database and Crystal
-                                                    Reports. Software for invoicing and managing invoices for a small company for buildings
-                                                    management
-                            <p />
-
-                        <br />
-                        <p class="p2">
-
-                            <b>Personal projects and a bachelor thesis</b>
-                        <p />
-
-                        <p class="p3">
-                            &#x2022 <b><i>Bachelor thesis</i></b>
-                            <br />
-                            &emsp;- <b><i>Online booking</i></b>
-                        – ASP.NET Web Forms application coded in C# with a use of javaScript and jQuery.
-                                                         Application developed for purchasing tickets online. Database in MS Sql Server and a web service written in
-                                                         C#.
-                        <p />
-
-                        <br />
-                        <p class="p2">
-                            <b>Personal projects</b>
-                        <p />
-
-                        <p class="p3">
-                            &emsp;- <b><i>Personal website</i></b> – ASP.NET Web Forms application coded in C# (this page &#128578)
-                            <br />
-                            &emsp;- <b><i>Lawyer office</i></b> – Windows forms application coded in C#, database in Access (ongoing project)
-                            <br />
-                            &emsp;- <b><i>Home finance</i></b> – Windows forms application coded in C#, database in Access (ongoing project)
-                            <br />
-                            &emsp;- <b><i>GetFit</i></b> – ASP.NET Web Forms application coded in C#, database in Access
-                            <br />
-                            &emsp;- <b><i>Search</i></b> – Windows forms application coded in C#, developed for searching a given word, to a given web
-                                                         site, for a given time.
-                            <p />
-
-                        <br />
-                        <p class="p2">
-                            <b>School projects</b>
-                        <p />
-
-                        <p class="p3">
-                            &emsp;- <b><i>Online booking</i></b> – web site coded in ASP, developed for purchasing tickets online. Database in Access.
-                            <br />
-                            &emsp;- <b><i>DVD</i></b> – program coded in Delphi 7.0, developed for rent-a-movie shop. Database in Access.
-                            <br />
-                            &emsp;- <b><i>Notepad</i></b> – program coded in Java, developed for text editing.
-                        <p />
-                        <br />
+                                <asp:Repeater ID="RepeaterExpChild" runat="server">
+                                    <ItemTemplate>
+                                        <li>
+                                            <p class="p3"><b><i><%# Eval("ExpName") %> &emsp;-</i></b> <%# Eval("ExpDescription") %></p>
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ItemTemplate>
+                        </asp:Repeater>
 
                     </div>
+
+                    <br />
+                    <br />
+
                     <div runat="server" id="div3" class="targetDiv">
+
                         <p class="p1">SKILLS </p>
-                        ✓ Good organizational, social and communication skills
-                            <br />
-                        ✓ Easily integrate in a team and adapt to different environments
-                            DIY, Sports
+
+                        <asp:Repeater ID="RepeaterSkills" runat="server">
+                            <ItemTemplate>
+                                <li>
+                                    <p class="p3"><%# Eval("SkillsName") %></p>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
                     </div>
+
                     <br />
                     <br />
+
                     <div runat="server" id="div4" class="targetDiv">
                         <p class="p1">CERTIFICATION </p>
-                        Graduated with acquired title Software Engineer in June 2014
+
+                        <asp:Repeater ID="RepeaterCert" runat="server">
+                            <ItemTemplate>
+                                <li>
+                                    <p class="p3"><%# Eval("CertName") %></p>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
 
                     </div>
                 </div>
